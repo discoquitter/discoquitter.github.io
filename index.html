@@ -2,31 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Patient Code</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Open+Sauce+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=IBM+Plex+Sans:wght@400&family=Open+Sauce+Sans:wght@400&display=swap" rel="stylesheet">
+  <!-- Internal Styles -->
+  <style>
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background-color: #f6f4ef;
+      color: #00333d;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: #00333d;
+      font-size: 3rem;
+      margin-top: 20vh;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #00333d;
+      margin: 10px 20px;
+    }
+    .container {
+      max-width: 900px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: auto;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #00333d;
+      color: #f6f4ef;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Open Sauce Sans', sans-serif;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      margin-top: 30px;
+    }
+    .button:hover {
+      background-color: #f6f4ef;
+      color: #00333d;
+      border: 1px solid #00333d;
+    }
+    .split-container {
+      display: flex;
+      height: 100vh;
+      padding: 20px;
+    }
+    .split-container .left,
+    .split-container .right {
+      width: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .split-container .left {
+      background-color: #00333d;
+      color: #f6f4ef;
+    }
+    .split-container .right {
+      background-color: #f6f4ef;
+      color: #00333d;
+    }
+    .split-container h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+    }
+    .split-container p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
-<body style="background-color: #F6F4EF;">
+<body>
+  <!-- First Page: Home Page -->
+  <h1>You fixed the prescription, now fix the process</h1>
+  <div class="container">
+    <a href="nextpage.html"><button class="button">Continue</button></a>
+  </div>
 
-  <!-- HERO SECTION -->
-  <section class="hero" style="padding: 100px 0;">
-    <div class="container flex">
-      <div class="left">
-        <h1 style="font-family: 'Playfair Display', serif; color: #00333D; font-size: 4rem;">
-          Elegant Headline Here
-        </h1>
-        <p style="font-family: 'IBM Plex Sans', sans-serif; color: #00333D;">
-          Supporting paragraph text that explains your value proposition.
-        </p>
-        <button style="background-color: #00333D; color: #F6F4EF; font-family: 'Open Sauce Sans', sans-serif; padding: 12px 24px; border: none; border-radius: 8px;">
-          Get Started
-        </button>
-      </div>
-      <div class="right">
-        <img src="your-illustration.svg" alt="Illustration" />
-      </div>
+  <!-- Second Page: Split About Me and Philosophy (nextpage.html) -->
+  <div class="split-container">
+    <!-- Left Side: About Me Section -->
+    <div class="left">
+      <h2>About Me</h2>
+      <p>My journey in healthcare started as the Head of Administration at Lilavati Hospital where we built some of Mumbai’s first patient service teams, (long before "patient experience" became a buzzword), I then went on to lead the hospital’s international expansion into Kenya.</p>
+      <p>Later, I scaled patient experience systems across multiple diagnostic centers at NM Medical, adapting to high-volume operations. Over the years, I’ve developed systems that serve everyone from families to high-profile patients like the Dalai Lama, Amitabh Bachchan, and Sachin Tendulkar.</p>
     </div>
-  </section>
 
+    <!-- Right Side: Philosophy Section -->
+    <div class="right">
+      <h2>My Philosophy</h2>
+      <p>Hospitals grow when patients trust them enough to return, refer others, and recover faster.</p>
+      <p>In an industry defined by high stakes and noise, patient experience is one of the few true competitive advantages left. Not a checkbox, but a strategic asset that quietly compounds over time.</p>
+      <p>I build sustainable, high-impact, patient-centric care models that actually work.</p>
+      <p>I work with teams who understand:</p>
+      <p>You don't win healthcare by marketing but by earning trust, the kind that people would choose with their lives, not once, but twice.</p>
+    </div>
+  </div>
 </body>
 </html>
