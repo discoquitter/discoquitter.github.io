@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>09</title>
+  <title>10</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=IBM+Plex+Sans&family=Open+Sauce+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -36,20 +36,22 @@
       flex-direction: column;
       justify-content: center;
     }
-    .split-container .right {
-      background-color: #00333d; /* Deep Green */
-      color: #f6f4ef; /* Sand */
-      width: 50%;
-      padding: 60px;
-      font-family: 'IBM Plex Sans', sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border-top-left-radius: 300px; /* Stadium shape */
-      border-bottom-left-radius: 300px;
-      margin-left: -100px; /* to overlap */
-      overflow: hidden;
-    }
+.split-container .right {
+  background-color: #00333d; /* Deep Green */
+  color: #f6f4ef; /* Sand */
+  width: 50%;
+  padding: 60px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Add this to center horizontally too */
+  height: 90vh; /* Add this to make it tall */
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 300px;
+  margin-left: -100px;
+  overflow: hidden;
+}
     h1, h2 {
       font-family: 'Playfair Display', serif;
     }
