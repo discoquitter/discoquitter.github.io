@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>007</title>
+  <title>008</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=IBM+Plex+Sans&family=Open+Sauce+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -64,9 +64,26 @@
 <body>
 
   <!-- First Page -->
-  <section class="first-page">
-    <h1>You fixed the prescription, now fix the process</h1>
-  </section>
+<section class="first-page">
+  <h1 id="typed-text"></h1>
+</section>
+
+<script>
+  const text = "You fixed the prescription, now fix the process.";
+  const typedText = document.getElementById("typed-text");
+  let index = 0;
+
+  function typeWriter() {
+    if (index < text.length) {
+      typedText.innerHTML += text.charAt(index);
+      index++;
+      setTimeout(typeWriter, 50);
+    }
+  }
+
+  window.onload = typeWriter;
+</script>
+
 
   <!-- Second Page: Split View -->
   <section class="split-container">
