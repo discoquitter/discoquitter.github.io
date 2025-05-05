@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Patient Code</title>
+  <title>My Website</title>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=IBM+Plex+Sans:wght@400&family=Open+Sauce+Sans:wght@400&display=swap" rel="stylesheet">
   <!-- Internal Styles -->
@@ -25,13 +25,6 @@
       margin-top: 20vh;
     }
 
-    /* Styling paragraph text */
-    p {
-      font-size: 1.2rem;
-      color: #00333d; /* Deep Green for normal text */
-      margin: 10px 20px;
-    }
-
     /* Container for split view */
     .split-container {
       display: flex;
@@ -41,7 +34,6 @@
 
     .split-container .left,
     .split-container .right {
-      width: 50%;
       padding: 20px;
       box-sizing: border-box;
     }
@@ -50,12 +42,28 @@
     .split-container .left {
       background-color: #f6f4ef; /* Sand background */
       color: #00333d; /* Deep Green text */
+      width: 50%;
     }
 
-    /* Right section styles - Philosophy */
+    /* Right section styles - Philosophy (Stadium Shape) */
     .split-container .right {
+      width: 50%;
       background-color: #00333d; /* Deep Green background */
       color: #f6f4ef; /* Sand text */
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Creating the stadium shape with a semi-circle */
+    .stadium-shape {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      background-color: #00333d; /* Deep Green background */
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
     }
 
     /* Styling for section headings */
@@ -82,8 +90,9 @@
       <p>Later, I scaled patient experience systems across multiple diagnostic centers at NM Medical, adapting to high-volume operations. Over the years, I’ve developed systems that serve everyone from families to high-profile patients like the Dalai Lama, Amitabh Bachchan, and Sachin Tendulkar.</p>
     </div>
 
-    <!-- Right Side: Philosophy Section -->
+    <!-- Right Side: Philosophy Section with Stadium Shape -->
     <div class="right">
+      <div class="stadium-shape"></div> <!-- Stadium Shape -->
       <h2>My Philosophy</h2>
       <p>Hospitals grow when patients trust them enough to return, refer others, and recover faster.</p>
       <p>In an industry defined by high stakes and noise, patient experience is one of the few true competitive advantages left. Not a checkbox, but a strategic asset that quietly compounds over time.</p>
