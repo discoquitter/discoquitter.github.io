@@ -2,97 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>6</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=IBM+Plex+Sans:wght@400&family=Open+Sauce+Sans:wght@400&display=swap" rel="stylesheet">
-  <!-- Internal Styles -->
+  <title>007</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=IBM+Plex+Sans&family=Open+Sauce+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
-    /* Resetting styles for the page */
     body {
-      font-family: 'IBM Plex Sans', sans-serif;
-      background-color: #f6f4ef; /* Sand background */
-      color: #00333d; /* Deep Green text */
       margin: 0;
-      padding: 0;
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+    .first-page {
+      height: 100vh;
+      background-color: #f6f4ef; /* Sand */
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-    }
-
-    h1 {
+      color: #00333d; /* Deep Green */
       font-family: 'Playfair Display', serif;
-      color: #00333d;
-      font-size: 3rem;
-      margin-top: 20vh;
+      font-size: 2.5rem;
+      padding: 20px;
     }
-
-    /* Container for split view */
     .split-container {
       display: flex;
       height: 100vh;
-      padding: 20px;
     }
-
-    .split-container .left,
-    .split-container .right {
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    /* Left section styles - About Me */
     .split-container .left {
-      background-color: #f6f4ef; /* Sand background */
-      color: #00333d; /* Deep Green text */
+      background-color: #f6f4ef; /* Sand */
+      color: #00333d; /* Deep Green */
       width: 50%;
+      padding: 60px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-
-    /* Right section styles - Philosophy (Stadium Shape) */
     .split-container .right {
+      background-color: #00333d; /* Deep Green */
+      color: #f6f4ef; /* Sand */
       width: 50%;
-      background-color: #00333d; /* Deep Green background */
-      color: #f6f4ef; /* Sand text */
-      position: relative;
+      padding: 60px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-top-left-radius: 300px; /* Stadium shape */
+      border-bottom-left-radius: 300px;
+      margin-left: -100px; /* to overlap */
       overflow: hidden;
     }
-
-    /* Creating the stadium shape with a semi-circle */
-    .stadium-shape {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 200px;
-      background-color: #00333d; /* Deep Green background */
-      border-bottom-left-radius: 100px;
-      border-bottom-right-radius: 100px;
-    }
-
-    /* Styling for section headings */
-    .split-container h2 {
+    h1, h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
     }
-
-    /* Styling paragraphs within each section */
-    .split-container p {
-      font-size: 1.2rem;
+    p {
+      margin-top: 20px;
       line-height: 1.6;
+      font-size: 1.2rem;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Second Page: Split About Me and Philosophy -->
-  <div class="split-container">
-    <!-- Left Side: About Me Section -->
+  <!-- First Page -->
+  <section class="first-page">
+    <h1>You fixed the prescription, now fix the process</h1>
+  </section>
+
+  <!-- Second Page: Split View -->
+  <section class="split-container">
+    
+    <!-- About Me Section -->
     <div class="left">
       <h2>About Me</h2>
       <p>My journey in healthcare started as the Head of Administration at Lilavati Hospital where we built some of Mumbai’s first patient service teams, (long before "patient experience" became a buzzword), I then went on to lead the hospital’s international expansion into Kenya.</p>
       <p>Later, I scaled patient experience systems across multiple diagnostic centers at NM Medical, adapting to high-volume operations. Over the years, I’ve developed systems that serve everyone from families to high-profile patients like the Dalai Lama, Amitabh Bachchan, and Sachin Tendulkar.</p>
     </div>
 
-    <!-- Right Side: Philosophy Section with Stadium Shape -->
+    <!-- My Philosophy Section -->
     <div class="right">
-      <div class="stadium-shape"></div> <!-- Stadium Shape -->
       <h2>My Philosophy</h2>
       <p>Hospitals grow when patients trust them enough to return, refer others, and recover faster.</p>
       <p>In an industry defined by high stakes and noise, patient experience is one of the few true competitive advantages left. Not a checkbox, but a strategic asset that quietly compounds over time.</p>
@@ -100,7 +87,9 @@
       <p>I work with teams who understand:</p>
       <p>You don't win healthcare by marketing but by earning trust, the kind that people would choose with their lives, not once, but twice.</p>
     </div>
-  </div>
+
+  </section>
 
 </body>
 </html>
+
