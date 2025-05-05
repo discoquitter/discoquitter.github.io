@@ -8,48 +8,63 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=IBM+Plex+Sans:wght@400&family=Open+Sauce+Sans:wght@400&display=swap" rel="stylesheet">
   <!-- Internal Styles -->
   <style>
+    /* Resetting styles for the page */
     body {
       font-family: 'IBM Plex Sans', sans-serif;
-      background-color: #f6f4ef;
-      color: #00333d;
+      background-color: #f6f4ef; /* Sand background */
+      color: #00333d; /* Deep Green text */
       margin: 0;
       padding: 0;
       text-align: center;
     }
+
     h1 {
       font-family: 'Playfair Display', serif;
       color: #00333d;
       font-size: 3rem;
       margin-top: 20vh;
     }
+
+    /* Styling paragraph text */
     p {
       font-size: 1.2rem;
-      color: #00333d;
+      color: #00333d; /* Deep Green for normal text */
       margin: 10px 20px;
     }
+
+    /* Container for split view */
     .split-container {
       display: flex;
       height: 100vh;
       padding: 20px;
     }
+
     .split-container .left,
     .split-container .right {
       width: 50%;
       padding: 20px;
       box-sizing: border-box;
     }
+
+    /* Left section styles - About Me */
     .split-container .left {
-      background-color: #f6f4ef;
-      color: #00333d;
+      background-color: #f6f4ef; /* Sand background */
+      color: #00333d; /* Deep Green text */
     }
+
+    /* Right section styles - Philosophy */
     .split-container .right {
-      background-color: #00333d;
-      color: #f6f4ef;
+      background-color: #00333d; /* Deep Green background */
+      color: #f6f4ef; /* Sand text */
     }
+
+    /* Styling for section headings */
     .split-container h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2.5rem;
     }
+
+    /* Styling paragraphs within each section */
     .split-container p {
       font-size: 1.2rem;
       line-height: 1.6;
@@ -77,6 +92,7 @@
       <p>You don't win healthcare by marketing but by earning trust, the kind that people would choose with their lives, not once, but twice.</p>
     </div>
   </div>
+
 </body>
 </html>
 
