@@ -1,0 +1,90 @@
+/* Reset some basic defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #f6f4ef; /* Sand */
+  scroll-behavior: smooth;
+}
+
+/* Typing text container */
+.typing-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #f6f4ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #00333d; /* Deep Green */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Split Page Container */
+.split-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Left - About Me */
+.split-container .left {
+  background-color: #f6f4ef; /* Sand */
+  color: #00333d; /* Deep Green */
+  width: 50%;
+  padding: 60px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Right - My Philosophy */
+.split-container .right {
+  background-color: #00333d; /* Deep Green */
+  color: #f6f4ef; /* Sand */
+  width: 50%;
+  padding: 60px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 300px;
+  border-bottom-left-radius: 300px;
+  margin-left: -50px;
+  overflow: hidden;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+/* Body text */
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* For better mobile responsiveness */
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column;
+  }
+
+  .split-container .left,
+  .split-container .right {
+    width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+  }
+}
