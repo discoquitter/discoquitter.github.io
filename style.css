@@ -119,6 +119,7 @@ p {
 #typing-text {
   font-size: 4rem;
   font-family: 'Playfair Display', serif;
+  font-weight: normal; /* Prevent boldness */
   color: #00333d; /* Deep Green */
   text-align: center;
   max-width: 80%;
